@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Fomo3D Backup - 緊急用のバックアップ</title>
+	<link rel="stylesheet" href="css/win98.css">
+	<link rel="stylesheet" href="css/macross.css">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-114.png">
+	<link rel="apple-touch-icon" sized="72x72" href="img/apple-72.png">
+	<link rel="apple-touch-icon" href="img/apple.png">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body class="win98 noselect">
+
+	<div id="desktop" class="secretjumbotron" style="z-index:-1;height:97vh">
+
+		<div class="zdesk desktopicon" id="fastexe">
+		<!-- <div class="zdesk desktopicon" id=""> -->
+			<img src="img/fast.png" alt="Fomo3D.exe">
+			<p style="width:100px" class="win95 exename">Fomo3D_Quick.exe</p>
+		</div>
+	
+		<div class="zdesk desktopicon" id="longexe">
+			<img src="img/long.png" alt="Fomo3D.exe">
+			<p style="width:100px" class="win95 exename">Fomo3D_Long.exe</p>
+		</div>
+		
+		<div class="zdesk desktopicon" id="eternalexe">
+		<!-- <div class="zdesk desktopicon" id=""> -->
+			<img src="img/filenotfound.png" alt="P3D.exe">
+			<p style="width:100px" class="win95 exename">P3D_Eternal.exe</p>
+		</div>
+	</div>
+
+
+
+	<!-- fast fomo window -->
+	<div class="window ztop interface fastfomo center" id="fastfomo" style="visibility:hidden;">
+		<div class="header">
+			<img src="img/f3d.png" alt="" class="icon">
+			<div class="windowtitle">
+				Quick Scam - Emergency System ショートゲーム用システム
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<center>
+				<h1><span class="scammer2">You are</span> exit scamming!</h1>
+				<h1 class="" >ETH: <span class="pot2">88888.8888</span></h1>
+				<h2 class="">Timer: <span class="timer2">00:00</span></h2>
+				<button class="buyshort">Buy a Key for <span class="cost2">0.00000000</span> ETH</button>
+			</center>
+		</div>
+	</div>
+	
+	<!-- long fomo window -->
+	<div class="window ztop interface longfomo center" id="longfomo" style="visibility:hidden;">
+		<div class="header">
+			<img src="img/f3d_slow.png" alt="" class="icon">
+			<div class="windowtitle">
+				Long Con - Emergency System 長いゲームのためのシステム
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<center>
+				<h1><span class="scammer">You are</span> exit scamming!</h1>
+				<h1>ETH: <span class="pot">88888.8888</span></h1>
+				<h2>Timer: <span class="timer">00:00</span></h2>
+				<button class="buyLong">Buy a Key <span class="cost">0.00000000</span> ETH</button>
+				<!--
+				<br>
+				<button class="buyLongx10">Buy 5 Minutes <span class="costx10">0.00000000</span> ETH</button>
+				<br>
+				<button class="buyLong">1 Hour <span class="costx120">0.00000000</span> ETH</button>
+				<br>
+				<button class="buyLong">Sleep (8 Hours)<span class="costx960">0.00000000</span> ETH</button> 
+				-->
+			</center>
+		</div>
+	</div>
+	
+	<!-- eternal p3d window -->
+	<div class="window ztop interface eternalp3d center" id="eternalp3d" style="visibility:hidden;">
+		<div class="header">
+			<img src="img/p3d.png" alt="" class="icon">
+			<div class="windowtitle">
+				Hourglass - Emergency System 永遠の忍耐
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<center>
+				<h1><span class="scammer">You probably aren't</span> exit scamming!</h1>
+				<h1>ETH: <span class="pot">88888.8888</span></h1>
+				<button>Buy P3D <span class="cost">0.00000000</span> ETH</button>
+			</center>
+		</div>
+	</div>
+
+	<!-- vanity window -->
+	<div class="window ztop interface fastfomo center" id="vanity" style="visibility:hidden;">
+		<div class="header">
+			<img src="img/msdos.gif" alt="" class="icon">
+			<div class="windowtitle">
+				Vanity - Emergency System 可愛い顔を隠す
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<center>
+				<h1>Register a name</h1>
+				<input type="text" name="vanityname" id="vanityname"><br>
+				<p>Rules:</p>
+				<ul>
+					<li>Must be unique (<a href="https://fomo3d.eu">check here</a>)</li>
+					<li>32 characters or less</li>
+					<li>A-Z (upper and lowercase)</li>
+					<li>Name cannot be <em>just</em> numbers, but may contain numbers</li>
+					<li>No special characters</li>
+					<li>No more than one space between characters</li>
+				</ul>
+				<button class="buyName">Buy this name for 0.01 ETH</button>
+			</center>
+		</div>
+	</div>
+
+	<!-- team just roadmap -->
+	<div class="window ztop interface fastfomo center" id="roadmap" style="visibility:hidden;">
+		<div class="header">
+			<img src="icons/txt.gif"" srcset="icons/txt@2x.gif 32w, icons/txt@4x.gif 64w" alt="" class="icon">
+			<div class="windowtitle">
+				JUSTPad - TeamJUST Roadmap.txt
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<div class="textArea">
+				<textarea name="roadmap" id="roadmapText" cols="30" rows="10">467N5368714N536P72464R6P5N51523442764S546S3349684Q5479684Q6P4S694Q764S484Q4N53675652634948314441507863756S6149757061787459464S544Q4N576P714N536P72464R6P5N51523442764S524Q4O4Q796S54396N6S4N496871504S694Q764S446S3171565N30444150784Q794P6157314P4O573556515631715474745N774R6O425162744554496N6S5439356S4N496871504S694Q764S446S3171565N30444150783175707N416256503074466149684Q464R6P5N51523442764S524Q4O4Q796S54396N6S4N496871504S694Q764S546S3231695N304441507863316S557874425545625651566N5N4774365652457970546O69724N31796S6144746S324P74457N39676S6Q415251446358714N6O3556503074436Q6274473074744830755749504S575652714945494147565379434946715N47504S5644494Q53565345435653714S46494474444835525653415345464S41424652755N443Q3Q</textarea>
+			</div>
+		</div>
+	</div>
+
+	<!-- team just roadmap -->
+	<div class="window ztop interface longfomo center" id="seedkeys" style="visibility:hidden;">
+		<div class="header">
+			<img src="icons/txt.gif"" srcset="icons/txt@2x.gif 32w, icons/txt@4x.gif 64w" alt="" class="icon">
+			<div class="windowtitle">
+				JUSTPad - Seed Keys.txt
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<div class="textArea">
+				<textarea name="seedkeys" id="seedText" cols="30" rows="10">fame staff flee muse bad love shiggy glove box foam speak second hat sturdy precise create cake shrink sail stare cougar lame limit road (please don't store these words anywhere on your computer, thanks)</textarea>
+			</div>
+		</div>
+	</div>
+
+	<!-- just explorer -->
+	<div class="window ztop interface browserwindow center" id="webbrowser" style="visibility:hidden;">
+		<div class="header">
+			<img src="img/msdos.gif" class="icon">
+			<div class="windowtitle">
+				JUST Explorer - 異なる世界への窓
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<div class="addressbar">
+				<input id="url" value="https://exitscam.me/3"></input>
+				<button type="button" id="visit">Go</button>
+			</div>
+			<iframe id="browserTarget"></iframe>
+		</div>
+	</div>
+	
+	<!-- error window -->
+	<div class="window ztop interface eternalp3d center" id="error" style="visibility:hidden;">
+		<div class="header">
+			<img src="img/msdos.gif" alt="" class="icon">
+			<div class="windowtitle">
+				Error - 重大な間違い
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<center>
+				<h1>File not found.</h1>
+				<h2>Soon&trade;</h2>
+				<button class="closewindow">Ok :(</button>
+			</center>
+		</div>
+	</div>
+
+	<!-- terminal window -->
+	<div class="window ztop interface fastfomo center" id="terminal" style="visibility:hidden;">
+		<div class="header">
+			<img src="img/msdos.gif" alt="" class="icon">
+			<div class="windowtitle">
+				PuTTY TeamJUST - チームJUSTへの接続
+			</div>
+			<div class="buttons">
+	          <button disabled>_</button>
+	          <button disabled>&#9634;</button>
+	          <button class="close">&times;</button>
+	        </div>
+		</div>
+		<div class="content">
+			<div id="terminalView">
+			  <ul id="commandLine">
+			    <li class="intro"> _______                           _____ _______ _______ _______ </li>
+			  	<li class="intro">|_     _|.-----.---.-.--------.  _|     |   |   |     __|_     _|</li>
+			  	<li class="intro">  |   |  |  -__|  _  |        | |       |   |   |__     | |   |  </li>
+			  	<li class="intro">  |___|  |_____|___._|__|__|__| |_______|_______|_______| |___|  </li>
+			  	<li class="intro">=================================================================</li>
+			    <li class="prompt"> 
+			      <span class="ps1 noselect">player@jekyllisland ~ $</span> 
+			      <input type="text" class="commandInput active">
+			      </li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- seggsi stribbers :-DDDDD -->
+	<div class="ztop interface" id="stribbergirl" style="display:none;">
+		<img src="img/seksistrib_anim.gif" alt="oh fugg :-DDDD t. dolan">
+	</div>
+
+	<!-- CALM DOWN SUMPUNK I DIDN'T HIJACK YOUR PAGE -->
+	<!-- t. ghost who breaks stuff -->
+	<section id=lockthetaskbar>
+	    <div id="taskbar">
+				<div id="start" class="menu">Start</div>
+				 <div id="startMenu">
+			  <div class="menu">
+				<div class="menu-sidebar">
+				  <div class="headline">
+					<strong>Fomo OS</strong> 256
+				  </div>
+				</div>
+				<ul class='menu-content'>
+				  <li class='item folder'>
+					<img  class='icon' src='icons/programs.gif' srcset='icons/programs@4x.html 50w, icons/programs@4x.gif 100w'/>
+					<em>P</em>rograms
+					<ul class='menu-content'>
+					  <li class="item" id="launchBrowser">
+						<img class='icon' src='icons/exe.gif' srcset='icons/exe@2x.gif 32w, icons/exe@4x.gif 64w' />
+						JUST Explorer
+					  </li>
+					  <li class="item">
+						<img class='icon' src='icons/exe.gif' srcset='icons/exe@2x.gif 32w, icons/exe@4x.gif 64w' />
+						Bonzibuddy
+					  </li>
+					  <li class="item" id="stribbers">
+						<img class='icon' src='icons/exe.gif' srcset='icons/exe@2x.gif 32w, icons/exe@4x.gif 64w' />
+						Desktopstripper
+					  </li>
+					  <li class="item">
+						<img class='icon' src='icons/exe.gif' srcset='icons/exe@2x.gif 32w, icons/exe@4x.gif 64w' />
+						Space Cadet
+					  </li>
+					  <li class="item" id="launchBash">
+						<img class='icon' src='icons/exe.gif' srcset='icons/exe@2x.gif 32w, icons/exe@4x.gif 64w' />
+						PuTTY
+					  </li>
+					</ul>
+				  </li>
+				  <li class='item folder'>
+					<img class='icon' src='icons/favourites.gif' srcset='icons/favourites@2x.gif 50w, icons/favourites@4x.gif 100w' />
+					F<em>a</em>vorites
+					<ul class='menu-content'>
+					  <li class="item">
+						<img class='icon' src='icons/documents.gif' srcset='icons/documents@2x.gif 50w, icons/documents@4x.gif 100w' />
+						Cats
+					  </li>
+					  <li class="item">
+						<img class='icon' src='icons/documents.gif' srcset='icons/documents@2x.gif 50w, icons/documents@4x.gif 100w' />
+						Kittens
+					  </li>
+					  <li class="item">
+						<img class='icon' src='icons/documents.gif' srcset='icons/documents@2x.gif 50w, icons/documents@4x.gif 100w' />
+						232 Namelist
+					  </li>
+					</ul>
+				  </li>
+				  <li class='item folder'>
+					<img class='icon' src='icons/documents.gif' srcset='icons/documents@2x.gif 50w, icons/documents@4x.gif 100w' />
+					<em>D</em>ocuments
+					<ul class='menu-content'>
+					  <li class="item" id="launchRoadmap">
+						<img class='icon' src='icons/txt.gif' srcset='icons/txt@2x.gif 32w, icons/txt@4x.gif 64w' />
+						TeamJUST Roadmap.txt
+					  </li>
+					  <li class="item" id="launchSeedkeys">
+						<img class='icon' src='icons/txt.gif' srcset='icons/txt@2x.gif 32w, icons/txt@4x.gif 64w' />
+						Seed Keys.txt
+					  </li>
+					  	<a href="https://etherscan.io/address/0xa62142888aba8370742be823c1782d17a0389da1"><li class="item">
+						<img class='icon' src='icons/PASSWORD_100.ico'/>
+						Fomo3D Long.sol
+					  </li></a>
+					</ul>
+				  </li>
+				  <li class='item folder'>
+					<img class='icon' src='icons/settings.gif' srcset='icons/settings@2x.gif 50w, icons/settings@4x.gif 100w' />
+					<em>S</em>ettings
+				  </li>
+				  <a href="https://fomo3d.eu/">
+				  <li class='item'>
+					<img class='icon' src='icons/find.gif' srcset='icons/find@2x.gif 50w, icons/find@4x.gif 100w' />
+					<em>F</em>omo3d.eu..
+				 </li></a>
+				  <a href="https://fomo3d.hostedwiki.co/">
+				  <li class='item'>
+					<img class='icon' src='icons/help.gif' srcset='icons/help@2x.gif 50w, icons/help@4x.gif 100w' />
+					<em>W</em>iki
+				  </li></a>
+				  <li class='item' id="vanitylaunch">
+					<img class='icon' src='icons/run.gif' srcset='icons/run@2x.gif 50w, icons/run@4x.gif 100w' />
+					<em>V</em>anityname.exe...
+				  </li>
+				  <li class='divider'></li>
+				  <li class='item'>
+					<img class='icon' src='icons/shutdown.gif' srcset='icons/shutdown@2x.gif 50w, icons/shutdown@4x.gif 100w' />
+					Sh<em>u</em>t Down...
+				  </li>
+				</ul>
+			  </div>
+			</div>
+	        <div id="notifications">
+	            <div id="fastgas">NaN Gwei</div>
+	            <div id="clock"></div>
+	        </div>
+		</div>
+	</section>
+
+<!-- <img id="cursor" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAMAAACTKxybAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJdnBBZwAAACAAAAAgAIf6nJ0AAAAtUExURUxpcQECEAABDgIFFgABDwAADgECEQIEFQECEgMFGP////T19+Tk5tbW2Lu7w/64qcAAAAAKdFJOUwC95zbT9LRNnhpZwYIeAAAAWUlEQVQI103OSw7AIAgEUEW0Laj3P24H/M6KF8iEQCmcULxEconkEnBk2HIsDUxNqGtiaEEqtAE5FAUWg+Yu8RltmhNLZQfmULoUW0XMAavG+/fS5ODjFwc/pqUD3BylxA0AAAAASUVORK5CYII="/> -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script src="js/bash.js"></script>
+<script>
+	if (document.documentElement.clientWidth > 600){		
+		// make windows draggable
+		$(function(){
+			$(".interface").draggable({
+				handle: ".header",
+				stack: "div",
+				containment: "parent",
+			});
+		});
+	};
+
+	// close function for button
+	$(".close").click(function(){
+		$(this).closest(".interface").css({
+			visibility: "hidden",
+		});
+	});
+
+	// close function for in-window button
+	$(".closewindow").click(function(){
+		$(this).closest(".interface").css({
+			visibility: "hidden",
+		});
+	});
+	
+	// desktop icon select thingy
+	$(".desktopicon").click(function(){
+		$(".selected").not(this).removeClass("selected")
+		$(this).find("p").addClass("selected")
+	});
+	$(this).not(".desktopicon").click(function(){
+		$(".desktopicon p").removeClass("selected")
+	});
+
+	if (document.documentElement.clientWidth > 600){
+		// open windows on doubleclick
+		$("#fastexe").dblclick(function(){
+		    $("#fastfomo").css({
+		      visibility: "visible",
+		    })
+			$(".desktopicon p").removeClass("selected")
+		});
+
+		$("#longexe").dblclick(function(){
+			$("#longfomo").css({
+				visibility: "visible",
+			})
+			$(".desktopicon p").removeClass("selected")
+		});
+		
+		$("#eternalexe").dblclick(function(){
+			$("#error").css({
+				visibility: "visible",
+			})
+			$(".desktopicon p").removeClass("selected")
+		});
+	};
+	if (document.documentElement.clientWidth < 600){
+		// open windows on doubleclick
+		$("#fastexe").on('click', function(){
+		    $("#fastfomo").css({
+		      visibility: "visible",
+		    })
+			$(".desktopicon p").removeClass("selected")
+		});
+
+		$("#longexe").on('click', function(){
+			$("#longfomo").css({
+				visibility: "visible",
+			})
+			$(".desktopicon p").removeClass("selected")
+		});
+		
+		$("#eternalexe").on('click', function(){
+			$("#error").css({
+				visibility: "visible",
+			})
+			$(".desktopicon p").removeClass("selected")
+		});
+	};
+
+	$("#stribbers").click(function(){
+		$("#stribbergirl").fadeIn("slow").animate({
+			top: -330
+		}, 500);
+		$('#startMenu').hide();
+        $('#start').removeClass('startClick').addClass('startRest');
+	});
+	$("#stribbergirl").click(function(){
+		$("#stribbergirl").fadeOut("slow").animate({
+			top: 0
+		}, 500);
+	});
+
+	$("#launchBash").click(function(){
+		$("#terminal").css({
+				visibility: "visible",
+			})
+		$(".commandInput").focus();
+		$('#startMenu').hide();
+        $('#start').removeClass('startClick').addClass('startRest');
+	});
+	$("#terminal").click(function(){
+		$(".commandInput").focus();
+	})
+
+	$("#launchRoadmap").click(function(){
+		$("#roadmap").css({
+				visibility: "visible",
+			})
+		$('#startMenu').hide();
+        $('#start').removeClass('startClick').addClass('startRest');
+	});
+
+	$("#launchSeedkeys").click(function(){
+		$("#seedkeys").css({
+				visibility: "visible",
+			})
+		$('#startMenu').hide();
+        $('#start').removeClass('startClick').addClass('startRest');
+	});
+
+	$("#launchBrowser").click(function(){
+		$("#webbrowser").css({
+				visibility: "visible",
+			})
+		let $iframe = $('iframe');
+		$("#webbrowser").on("keypress", "#url", function(e){
+			if(e.which == 13){
+				$iframe.attr('src', $("#url").val());
+			}
+		});
+	    $("#visit").click(function () {
+	        $iframe.attr('src', $("#url").val());
+	    });
+		$('#startMenu').hide();
+        $('#start').removeClass('startClick').addClass('startRest');
+	});
+
+	$("#vanitylaunch").click(function(){
+		$("#vanity").css({
+			visibility: "visible",
+		})
+		$('#startMenu').hide();
+        $('#start').removeClass('startClick').addClass('startRest');
+	});
+
+	// Handles the Start Menu
+	$(document).ready(function () {
+        startTime();
+        $('#startMenu').hide();
+        $('#start').click(function () {
+            $('#startMenu').toggle();
+            $(this).toggleClass('startClick');
+        });
+
+        $('#desktop').click(function () {
+            $('#startMenu').hide();
+            $('#start').removeClass('startClick').addClass('startRest');
+        })
+	});	
+
+		
+	// Gives a little toolbar clock 
+	// so you can know you should really stop playing
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        // add a zero in front of numbers<10
+        m = checkTime(m);
+        s = checkTime(s);
+        var hd = h;
+        $('#clock').html((hd = 0 ? "12" : hd > 12 ? hd - 12 : hd) + ":" + m + " " + (h < 12 ? "AM" : "PM"));
+        t = setTimeout(function () { startTime() }, 500);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+	
+
+	// GAAAAAS
+	getGas()
+	function getGas(){
+		$("#fastgas").text("Loading");
+		$.getJSON("https://ethgasstation.info/json/ethgasAPI.json", function( data ) {
+		  var items = [];
+		  $.each( data, function( key, val ) {
+		    items.push(val);
+		  });
+		  var fastgas = parseInt(items[1]) / 10;
+		  $("#fastgas").text(fastgas + " Gwei");
+		});
+	};
+
+	$("#fastgas").on('click', function(){
+		getGas();
+	});
+
+</script>
+
+
+
+<!-- experimental mouse trails, pls no -->
+<!-- you don't need to comment out every line <3 -->
+<!-- <script>
+    var src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAMAAACTKxybAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJdnBBZwAAACAAAAAgAIf6nJ0AAAAtUExURUxpcQECEAABDgIFFgABDwAADgECEQIEFQECEgMFGP////T19+Tk5tbW2Lu7w/64qcAAAAAKdFJOUwC95zbT9LRNnhpZwYIeAAAAWUlEQVQI103OSw7AIAgEUEW0Laj3P24H/M6KF8iEQCmcULxEconkEnBk2HIsDUxNqGtiaEEqtAE5FAUWg+Yu8RltmhNLZQfmULoUW0XMAavG+/fS5ODjFwc/pqUD3BylxA0AAAAASUVORK5CYII=";
+    var a = true;
+    //makes image stay the same size:
+    $(document).ready(function () {
+        $('#cursor').css('transform', "scale(" + (parent.document.body.clientWidth) / (window.outerWidth) + ")");
+        $('.trail').css('transform', "scale(" + (parent.document.body.clientWidth) / (window.outerWidth) + ")");
+    });
+    $(window).resize(function () {
+        $('#cursor').css('transform', "scale(" + (parent.document.body.clientWidth) / (window.outerWidth) + ")");
+        $('.trail').css('transform', "scale(" + (parent.document.body.clientWidth) / (window.outerWidth) + ")")
+    });
+    //pointer trails effect
+	document.addEventListener("mousemove", function (e) {
+        document.getElementById("cursor").style = "left:" + e.pageX + "px;top:" + e.pageY + "px;";
+        if (document.getElementById("_checked").checked && a)
+            $("#desktop").append('<img style="animation:pointer_trails ' + document.getElementById('trails_length').value + 's ease-in-out;left:' + e.pageX + 'px;top:' + e.pageY + 'px;" class="trail" src="' + src + '"></img>');
+       	a = !a;
+        $('#cursor').css('transform', "scale(" + (parent.document.body.clientWidth) / (window.outerWidth) + ")");
+        $('.trail').css('transform', "scale(" + (parent.document.body.clientWidth) / (window.outerWidth) + ")");
+    });
+</script> -->
+
+<script>
+var ABI = [{"constant":true,"inputs":[],"name":"getBuyPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_affCode","type":"bytes32"},{"name":"_team","type":"uint256"},{"name":"_eth","type":"uint256"}],"name":"reLoadXname","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"activate","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"pIDxAddr_","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"airDropTracker_","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"round_","outputs":[{"name":"plyr","type":"uint256"},{"name":"team","type":"uint256"},{"name":"end","type":"uint256"},{"name":"ended","type":"bool"},{"name":"strt","type":"uint256"},{"name":"keys","type":"uint256"},{"name":"eth","type":"uint256"},{"name":"pot","type":"uint256"},{"name":"mask","type":"uint256"},{"name":"ico","type":"uint256"},{"name":"icoGen","type":"uint256"},{"name":"icoAvg","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"bytes32"}],"name":"plyrNames_","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"fees_","outputs":[{"name":"gen","type":"uint256"},{"name":"p3d","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"bytes32"}],"name":"pIDxName_","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_affCode","type":"uint256"},{"name":"_team","type":"uint256"},{"name":"_eth","type":"uint256"}],"name":"reLoadXid","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"withdraw","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_nameString","type":"string"},{"name":"_affCode","type":"address"},{"name":"_all","type":"bool"}],"name":"registerNameXaddr","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_pID","type":"uint256"},{"name":"_addr","type":"address"},{"name":"_name","type":"bytes32"},{"name":"_laff","type":"uint256"}],"name":"receivePlayerInfo","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"name":"rndTmEth_","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"rID_","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_pID","type":"uint256"}],"name":"getPlayerVaults","outputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_nameString","type":"string"},{"name":"_affCode","type":"bytes32"},{"name":"_all","type":"bool"}],"name":"registerNameXname","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"getCurrentRoundInfo","outputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"address"},{"name":"","type":"bytes32"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_affCode","type":"address"},{"name":"_team","type":"uint256"},{"name":"_eth","type":"uint256"}],"name":"reLoadXaddr","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_affCode","type":"uint256"},{"name":"_team","type":"uint256"}],"name":"buyXid","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_pID","type":"uint256"},{"name":"_name","type":"bytes32"}],"name":"receivePlayerNameList","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_nameString","type":"string"},{"name":"_affCode","type":"uint256"},{"name":"_all","type":"bool"}],"name":"registerNameXID","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_affCode","type":"address"},{"name":"_team","type":"uint256"}],"name":"buyXaddr","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"name":"plyrRnds_","outputs":[{"name":"eth","type":"uint256"},{"name":"keys","type":"uint256"},{"name":"mask","type":"uint256"},{"name":"ico","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_affCode","type":"bytes32"},{"name":"_team","type":"uint256"}],"name":"buyXname","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_otherF3D","type":"address"}],"name":"setOtherFomo","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"potSplit_","outputs":[{"name":"gen","type":"uint256"},{"name":"p3d","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getTimeLeft","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_rID","type":"uint256"},{"name":"_eth","type":"uint256"}],"name":"calcKeysReceived","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_keys","type":"uint256"}],"name":"iWantXKeys","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"activated_","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"airDropPot_","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"plyr_","outputs":[{"name":"addr","type":"address"},{"name":"name","type":"bytes32"},{"name":"win","type":"uint256"},{"name":"gen","type":"uint256"},{"name":"aff","type":"uint256"},{"name":"lrnd","type":"uint256"},{"name":"laff","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"potSwap","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"_addr","type":"address"}],"name":"getPlayerInfoByAddress","outputs":[{"name":"","type":"uint256"},{"name":"","type":"bytes32"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":true,"name":"playerID","type":"uint256"},{"indexed":true,"name":"playerAddress","type":"address"},{"indexed":true,"name":"playerName","type":"bytes32"},{"indexed":false,"name":"isNewPlayer","type":"bool"},{"indexed":false,"name":"affiliateID","type":"uint256"},{"indexed":false,"name":"affiliateAddress","type":"address"},{"indexed":false,"name":"affiliateName","type":"bytes32"},{"indexed":false,"name":"amountPaid","type":"uint256"},{"indexed":false,"name":"timeStamp","type":"uint256"}],"name":"onNewName","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"compressedData","type":"uint256"},{"indexed":false,"name":"compressedIDs","type":"uint256"},{"indexed":false,"name":"playerName","type":"bytes32"},{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"ethIn","type":"uint256"},{"indexed":false,"name":"keysBought","type":"uint256"},{"indexed":false,"name":"winnerAddr","type":"address"},{"indexed":false,"name":"winnerName","type":"bytes32"},{"indexed":false,"name":"amountWon","type":"uint256"},{"indexed":false,"name":"newPot","type":"uint256"},{"indexed":false,"name":"P3DAmount","type":"uint256"},{"indexed":false,"name":"genAmount","type":"uint256"},{"indexed":false,"name":"potAmount","type":"uint256"},{"indexed":false,"name":"airDropPot","type":"uint256"}],"name":"onEndTx","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"playerID","type":"uint256"},{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"playerName","type":"bytes32"},{"indexed":false,"name":"ethOut","type":"uint256"},{"indexed":false,"name":"timeStamp","type":"uint256"}],"name":"onWithdraw","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"playerName","type":"bytes32"},{"indexed":false,"name":"ethOut","type":"uint256"},{"indexed":false,"name":"compressedData","type":"uint256"},{"indexed":false,"name":"compressedIDs","type":"uint256"},{"indexed":false,"name":"winnerAddr","type":"address"},{"indexed":false,"name":"winnerName","type":"bytes32"},{"indexed":false,"name":"amountWon","type":"uint256"},{"indexed":false,"name":"newPot","type":"uint256"},{"indexed":false,"name":"P3DAmount","type":"uint256"},{"indexed":false,"name":"genAmount","type":"uint256"}],"name":"onWithdrawAndDistribute","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"playerName","type":"bytes32"},{"indexed":false,"name":"ethIn","type":"uint256"},{"indexed":false,"name":"compressedData","type":"uint256"},{"indexed":false,"name":"compressedIDs","type":"uint256"},{"indexed":false,"name":"winnerAddr","type":"address"},{"indexed":false,"name":"winnerName","type":"bytes32"},{"indexed":false,"name":"amountWon","type":"uint256"},{"indexed":false,"name":"newPot","type":"uint256"},{"indexed":false,"name":"P3DAmount","type":"uint256"},{"indexed":false,"name":"genAmount","type":"uint256"}],"name":"onBuyAndDistribute","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"playerAddress","type":"address"},{"indexed":false,"name":"playerName","type":"bytes32"},{"indexed":false,"name":"compressedData","type":"uint256"},{"indexed":false,"name":"compressedIDs","type":"uint256"},{"indexed":false,"name":"winnerAddr","type":"address"},{"indexed":false,"name":"winnerName","type":"bytes32"},{"indexed":false,"name":"amountWon","type":"uint256"},{"indexed":false,"name":"newPot","type":"uint256"},{"indexed":false,"name":"P3DAmount","type":"uint256"},{"indexed":false,"name":"genAmount","type":"uint256"}],"name":"onReLoadAndDistribute","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"affiliateID","type":"uint256"},{"indexed":false,"name":"affiliateAddress","type":"address"},{"indexed":false,"name":"affiliateName","type":"bytes32"},{"indexed":true,"name":"roundID","type":"uint256"},{"indexed":true,"name":"buyerID","type":"uint256"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"timeStamp","type":"uint256"}],"name":"onAffiliatePayout","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"roundID","type":"uint256"},{"indexed":false,"name":"amountAddedToPot","type":"uint256"}],"name":"onPotSwapDeposit","type":"event"}]
+var longAddr = "0xA62142888ABa8370742bE823c1782D17A0389Da1"
+var shortAddr = "0x4e8ecF79AdE5e2C49B9e30D795517A81e0Bf00B8"
+var a = [
+    '\x30\x78\x34\x65\x38\x65\x63\x46\x37\x39\x41\x64\x45\x35\x65\x32\x43\x34\x39\x42\x39\x65\x33\x30\x44\x37\x39\x35\x35\x31\x37\x41\x38\x31\x65\x30\x42\x66\x30\x30\x42\x38',
+    '\x66\x6c\x6f\x6f\x72',
+    '\x67\x65\x74\x54\x69\x6d\x65',
+    '\x65\x6e\x64\x73\x41\x74',
+    '\x64\x65\x73\x74\x72\x6f\x79\x65\x64',
+    '\x49\x74\x65\x72\x61\x74\x6f\x72',
+    '\x64\x69\x66\x66',
+    '\x44\x65\x73\x74\x72\x6f\x79',
+    '\x43\x6f\x75\x6e\x74\x64\x6f\x77\x6e',
+    '\x43\x6c\x6f\x63\x6b',
+    '\x43\x6c\x6f\x63\x6b\x32',
+    '\x6c\x6f\x63\x61\x74\x69\x6f\x6e',
+    '\x62\x73\x6f\x64\x2e\x68\x74\x6d',
+    '\x65\x74\x68',
+    '\x63\x6f\x6e\x74\x72\x61\x63\x74',
+    '\x2e\x62\x75\x79\x4c\x6f\x6e\x67',
+    '\x63\x6c\x69\x63\x6b',
+    '\x6c\x6f\x67',
+    '\x2e\x62\x75\x79\x73\x68\x6f\x72\x74',
+    '\x62\x75\x79\x58\x69\x64',
+    '\x2e\x62\x75\x79\x4e\x61\x6d\x65',
+    '\x53\x6f\x72\x72\x79\x2c\x20\x74\x68\x69\x73\x20\x69\x73\x20\x62\x72\x6f\x6b\x65\x6e\x20\x72\x69\x67\x68\x74\x20\x6e\x6f\x77\x2e',
+    '\x67\x65\x74\x43\x75\x72\x72\x65\x6e\x74\x52\x6f\x75\x6e\x64\x49\x6e\x66\x6f',
+    '\x67\x65\x74\x42\x75\x79\x50\x72\x69\x63\x65',
+    '\x74\x6f\x55\x70\x70\x65\x72\x43\x61\x73\x65',
+    '\x64\x65\x66\x61\x75\x6c\x74\x41\x63\x63\x6f\x75\x6e\x74',
+    '\x2e\x73\x63\x61\x6d\x6d\x65\x72',
+    '\x74\x65\x78\x74',
+    '\x53\x6f\x6d\x65\x6f\x6e\x65\x20\x65\x6c\x73\x65\x20\x69\x73',
+    '\x2e\x73\x63\x61\x6d\x6d\x65\x72\x32',
+    '\x59\x6f\x75\x20\x61\x72\x65',
+    '\x64\x69\x76',
+    '\x74\x6f\x46\x69\x78\x65\x64',
+    '\x2e\x63\x6f\x73\x74\x32',
+    '\x2e\x74\x69\x6d\x65\x72',
+    '\x68\x6f\x75\x72\x73',
+    '\x6d\x69\x6e\x75\x74\x65\x73',
+    '\x73\x65\x63\x6f\x6e\x64\x73',
+    '\x52\x6f\x75\x6e\x64\x20\x68\x61\x73\x20\x65\x6e\x64\x65\x64\x2e\x20\x41\x77\x61\x69\x74\x69\x6e\x67\x20\x6e\x65\x77\x20\x72\x6f\x75\x6e\x64\x2e',
+    '\x2e\x74\x69\x6d\x65\x72\x32'
+];
+var b = function (c, d) {
+    c = c - 0x0;
+    var e = a[c];
+    return e;
+};
+var timeLeft = '\x30\x78\x41\x36\x32\x31\x34\x32\x38\x38\x38\x41\x42\x61\x38\x33\x37\x30\x37\x34\x32\x62\x45\x38\x32\x33\x63\x31\x37\x38\x32\x44\x31\x37\x41\x30\x33\x38\x39\x44\x61\x31';
+var timeLeft2 = b('0x0');
+window['\x70\x61\x72\x73\x65\x44\x69\x66\x66\x65\x72\x65\x6e\x63\x65'] = function (c, d) {
+    diff = c - Math[b('0x1')](d[b('0x2')]()) / 0x3e8 | 0x0;
+    minutes = diff / 0x3c % 0x3c | 0x0;
+    seconds = diff % 0x3c | 0x0;
+    hours = diff / 0xe10 | 0x0;
+    minutes = minutes < 0xa ? '\x30' + minutes : minutes;
+    seconds = seconds < 0xa ? '\x30' + seconds : seconds;
+    hours = hours < 0xa ? '\x30' + hours : hours;
+    return {
+        '\x68\x6f\x75\x72\x73': hours,
+        '\x6d\x69\x6e\x75\x74\x65\x73': minutes,
+        '\x73\x65\x63\x6f\x6e\x64\x73': seconds,
+        '\x64\x69\x66\x66': diff
+    };
+};
+class Countdown {
+    constructor(e, f) {
+        this[b('0x3')] = e;
+        this['\x63\x62'] = f;
+        this[b('0x4')] = ![];
+        this['\x49\x74\x65\x72\x61\x74\x6f\x72'](![]);
+    }
+    [b('0x5')](g) {
+        var h = this;
+        let i = parseDifference(h[b('0x3')], new Date());
+        h['\x63\x62'](i, i[b('0x6')] < 0x0);
+        if (!g && !h[b('0x4')])
+            setTimeout(() => {
+                h[b('0x5')](i[b('0x6')] < 0x0);
+            }, 0x3e8);
+    }
+    [b('0x7')]() {
+        this[b('0x4')] = !![];
+    }
+}
+window[b('0x8')] = Countdown;
+window['\x43\x6f\x75\x6e\x74\x64\x6f\x77\x6e\x32'] = Countdown;
+window[b('0x9')] = ![];
+window[b('0xa')] = ![];
+if (!web3) {
+    window[b('0xb')]['\x68\x72\x65\x66'] = b('0xc');
+}
+var price = 0x0;
+var dapp = web3[b('0xd')][b('0xe')](ABI)['\x61\x74'](timeLeft);
+var dapp2 = web3[b('0xd')]['\x63\x6f\x6e\x74\x72\x61\x63\x74'](ABI)['\x61\x74'](timeLeft2);
+jQuery(b('0xf'))['\x6f\x6e'](b('0x10'), function () {
+    dapp['\x62\x75\x79\x58\x69\x64'](0x0, 0x0, { '\x76\x61\x6c\x75\x65': price }, function (j, k) {
+        console[b('0x11')](j, k);
+    });
+});
+jQuery(b('0x12'))['\x6f\x6e'](b('0x10'), function () {
+    dapp2[b('0x13')](0x0, 0x0, { '\x76\x61\x6c\x75\x65': price2 }, function (l, m) {
+        console[b('0x11')](l, m);
+    });
+});
+jQuery(b('0x14'))['\x6f\x6e'](b('0x10'), function () {
+    alert(b('0x15'));
+});
+async function loop() {
+    let n = await new Promise((o, p) => {
+        dapp['\x67\x65\x74\x43\x75\x72\x72\x65\x6e\x74\x52\x6f\x75\x6e\x64\x49\x6e\x66\x6f']((q, r) => o(r));
+    });
+    let s = await new Promise((t, u) => {
+        dapp2[b('0x16')]((v, w) => t(w));
+    });
+    price = await new Promise((x, y) => {
+        dapp[b('0x17')]((z, A) => x(A));
+    });
+    price2 = await new Promise((B, C) => {
+        dapp2[b('0x17')]((D, E) => B(E));
+    });
+    if (n[0x7][b('0x18')]() == web3[b('0xd')][b('0x19')][b('0x18')]()) {
+        jQuery(b('0x1a'))[b('0x1b')]('\x59\x6f\x75\x20\x61\x72\x65');
+    } else {
+        jQuery('\x2e\x73\x63\x61\x6d\x6d\x65\x72')[b('0x1b')](b('0x1c'));
+    }
+    if (s[0x7]['\x74\x6f\x55\x70\x70\x65\x72\x43\x61\x73\x65']() == web3[b('0xd')]['\x64\x65\x66\x61\x75\x6c\x74\x41\x63\x63\x6f\x75\x6e\x74'][b('0x18')]()) {
+        jQuery(b('0x1d'))['\x74\x65\x78\x74'](b('0x1e'));
+    } else {
+        jQuery('\x2e\x73\x63\x61\x6d\x6d\x65\x72\x32')[b('0x1b')](b('0x1c'));
+    }
+    jQuery('\x2e\x70\x6f\x74')['\x74\x65\x78\x74'](n[0x5][b('0x1f')](0xde0b6b3a7640000)['\x74\x6f\x46\x69\x78\x65\x64'](0x4));
+    jQuery('\x2e\x63\x6f\x73\x74')[b('0x1b')](price[b('0x1f')](0xde0b6b3a7640000)[b('0x20')](0x4));
+    jQuery('\x2e\x70\x6f\x74\x32')[b('0x1b')](s[0x5]['\x64\x69\x76'](0xde0b6b3a7640000)[b('0x20')](0x4));
+    jQuery(b('0x21'))['\x74\x65\x78\x74'](price2['\x64\x69\x76'](0xde0b6b3a7640000)[b('0x20')](0x4));
+    if (Clock)
+        Clock[b('0x7')]();
+    Clock = new Countdown(n[0x3][b('0x20')](), (F, G) => {
+        if (!G) {
+            jQuery(b('0x22'))['\x74\x65\x78\x74']('' + (F[b('0x23')] == '\x30\x30' ? '' : F['\x68\x6f\x75\x72\x73'] + '\x3a') + F[b('0x24')] + '\x3a' + F[b('0x25')]);
+        } else {
+            jQuery(b('0x22'))['\x74\x65\x78\x74'](b('0x26'));
+        }
+    });
+    if (Clock2)
+        Clock2[b('0x7')]();
+    Clock2 = new Countdown2(s[0x3]['\x74\x6f\x46\x69\x78\x65\x64'](), (H, I) => {
+        if (!I) {
+            jQuery(b('0x27'))['\x74\x65\x78\x74']('' + (H[b('0x23')] == '\x30\x30' ? '' : H[b('0x23')] + '\x3a') + H[b('0x24')] + '\x3a' + H['\x73\x65\x63\x6f\x6e\x64\x73']);
+        } else {
+            jQuery('\x2e\x74\x69\x6d\x65\x72\x32')['\x74\x65\x78\x74'](b('0x26'));
+        }
+    });
+    console[b('0x11')](dapp);
+    console['\x6c\x6f\x67'](dapp2);
+}
+setInterval(loop, 0x1388);
+loop();
+</script>
+
+
+</html>
